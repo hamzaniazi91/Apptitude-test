@@ -1,0 +1,14 @@
+.maintext{
+margin-top: 100px;
+
+}
+*{
+
+	background-color:  orange darken-2;
+}
+
+/*to be installed
+service-confguration 
+accounts-google*/
+
+/*in console Accounts.services.configured();*/
