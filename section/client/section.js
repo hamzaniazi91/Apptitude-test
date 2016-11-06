@@ -8,6 +8,22 @@ Template.section.onRendered(function(){
 
 });
 
+
+Template.section.userId = function () {
+    return Meteor.userId();
+}
+
+
+
+Template.intro.helpers({
+	displayScore: function(){
+		var score=Session.get('score');
+		return score;
+	},
+	
+
+});
+
 Template.section.events({
 
 'click #gotoQuestions' : function(event) {
