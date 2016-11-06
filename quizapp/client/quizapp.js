@@ -34,9 +34,34 @@ Template.intro.helpers({
 
 
 
+Template.score.helpers({
+// 		'count1': function(){
+
+
+
+// var _sec=Router.current().params._name
+
+// var count = Questions.find({ section:_sec,no: {$in:arr}} ,{limit:Session.get('limit'),skip:Session.get('skip')}).find()
+// 	console.log(count);
+// 		return count;
+// 		//return Questions.find({limit:Session.get('limit'),skip:Session.get('skip')});
+// 	},
+
+});
+
+
 
 Template.questions.helpers({
 
+		'count1': function(){
+
+
+var count = Session.get('limit');
+	console.log(count);
+
+		return count;
+		//return Questions.find({limit:Session.get('limit'),skip:Session.get('skip')});
+	},
 
 
 
@@ -68,6 +93,8 @@ Template.questions.helpers({
 		return Questions.find({ section:_sec,no: {$in:arr}} ,{limit:Session.get('limit'),skip:Session.get('skip')}).fetch();
 		//return Questions.find({limit:Session.get('limit'),skip:Session.get('skip')});
 	},
+
+
 
 
 
